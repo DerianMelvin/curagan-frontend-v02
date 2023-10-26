@@ -92,41 +92,43 @@ export default function AppointmentRequestAction({
 
   return (
     <>
-      <div className="w-full flex items-center justify-between gap-2">
-        {/* Batal Button */}
-        {disableSubmit ? (
-          <button
-            disabled
-            className="w-1/2 p-2 rounded-md text-sm bg-red-700 text-white bg-opacity-50"
-          >
-            Batal
-          </button>
-        ) : (
-          <button
-            onClick={() => handleAppointmentRequest(false)}
-            className="w-1/2 p-2 rounded-md text-sm bg-red-700 text-white"
-          >
-            Batal
-          </button>
-        )}
+      {!statusUpdated && (
+        <div className="w-full flex items-center justify-between gap-2">
+          {/* Batal Button */}
+          {disableSubmit ? (
+            <button
+              disabled
+              className="w-1/2 p-2 rounded-md text-sm bg-red-700 text-white bg-opacity-40"
+            >
+              Batal
+            </button>
+          ) : (
+            <button
+              onClick={() => handleAppointmentRequest(false)}
+              className="w-1/2 p-2 rounded-md text-sm bg-red-700 text-white"
+            >
+              Batal
+            </button>
+          )}
 
-        {/* Terima Button */}
-        {disableSubmit ? (
-          <button
-            disabled
-            className="w-1/2 p-2 rounded-md text-sm bg-green-600 text-white bg-opacity-50"
-          >
-            Terima
-          </button>
-        ) : (
-          <button
-            onClick={() => handleAppointmentRequest(true)}
-            className="w-1/2 p-2 rounded-md text-sm bg-green-600 text-white"
-          >
-            Terima
-          </button>
-        )}
-      </div>
+          {/* Terima Button */}
+          {disableSubmit ? (
+            <button
+              disabled
+              className="w-1/2 p-2 rounded-md text-sm bg-green-600 text-white bg-opacity-40"
+            >
+              Terima
+            </button>
+          ) : (
+            <button
+              onClick={() => handleAppointmentRequest(true)}
+              className="w-1/2 p-2 rounded-md text-sm bg-green-600 text-white"
+            >
+              Terima
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Status Message */}
       {!statusUpdated ? (
