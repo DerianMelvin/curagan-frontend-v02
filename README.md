@@ -1,6 +1,48 @@
 # Curagan
 
-## Prerequisite
+## Table of Contents
+
+- [Curagan](#curagan)
+  - [Table of Contents](#table-of-contents)
+  - [Live Demo](#live-demo)
+  - [Getting Started](#getting-started)
+    - [Installation](#installation)
+  - [Commit Message Guidelines](#commit-message-guidelines)
+    - [Format](#format)
+      - [Header](#header)
+      - [Body](#body)
+      - [Footer](#footer)
+    - [Using Commitizen](#using-commitizen)
+    - [Manual Commits](#manual-commits)
+    - [Commit Linting](#commit-linting)
+
+## Live Demo
+
+[https://curagan-derian.vercel.app](https://curagan-derian.vercel.app)
+
+## Getting Started
+
+Make sure that you have [Node.js](https://nodejs.org/en) installed on your machine
+
+### Installation
+
+1. Clone the repository to your local machine.
+
+   ```sh
+    git clone https://github.com/DerianMelvin/curagan-frontend-v02.git
+   ```
+
+2. Install all the necessary dependencies.
+
+   ```sh
+    npm i
+   ```
+
+3. Run the application in development mode
+
+   ```sh
+    npm run dev
+   ```
 
 ## Commit Message Guidelines
 
